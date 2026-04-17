@@ -9,9 +9,10 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 
 ## Demo
 
-![Autonomous Vacuum Cleaner Robot](images/vacuum_cleaner_front.png?raw=true)
-![Autonomous Vacuum Cleaner Robot](images/vacuum_cleaner_back.png?raw=true)
+<img src="vacuum_cleaner_front.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+<img src="vacuum_cleaner_back.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 <img src="images/Internal_circuit1.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+
 ---
 
 ## Features
@@ -25,9 +26,6 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 - Proteus simulation validated before hardware build
 
 ---
-## Block diagram
-
-![Block diagram of Autonomous Vacuum Cleaner Robot](images/Block_diagram.png?raw=true)
 
 ## Hardware Components
 
@@ -43,13 +41,19 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 | Jumper Wires | — |
 
 ---
+## Block diagram
+
+<img src="Block_diagram.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 ## Pin Configuration
 
+### Arduino Uno R3
+
+<img src="Arduino-UNO.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+
 ### Ultrasonic Sensors (HC-SR04)
 
-![Pin out of HCSR04](images/HC-SR04-Ultrasonic-Sensor-Pinout.png)
-
+<img src="hcsr04-1.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 | Sensor | Trig Pin | Echo Pin |
 |---|---|---|
@@ -59,7 +63,7 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 
 ### IR Floor Sensor
 
-![Pin out of IR Module](images/IR%20Pinout_bb.jpg)
+<img src="IR%20Pinout_bb.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 | Signal | Arduino Pin |
 |---|---|
@@ -69,6 +73,8 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 > IR reads `LOW` = floor present, `HIGH` = edge/cliff detected
 
 ### Motor Driver (L298N)
+
+<img src="L298N-Motor-Driver.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 | Motor | IN1 | IN2 |
 |---|---|---|
