@@ -49,6 +49,9 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 
 ### Ultrasonic Sensors (HC-SR04)
 
+![Pin out of HCSR04](images/HC-SR04-Ultrasonic-Sensor-Pinout.png)
+
+
 | Sensor | Trig Pin | Echo Pin |
 |---|---|---|
 | Left | 3 | 5 |
@@ -56,6 +59,8 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 | Right | 10 | 11 |
 
 ### IR Floor Sensor
+
+![Pin out of IR Module](images/IR%20Pinout_bb.jpg)
 
 | Signal | Arduino Pin |
 |---|---|
