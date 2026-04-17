@@ -188,4 +188,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## Author
 
 **Amarnath K R**  
-[GitHub](https://github.com/kramarnath) · [LinkedIn](#)
+[GitHub](https://github.com/kramarnath) · [LinkedIn]([#](https://www.linkedin.com/in/amarnath-k-r-276395237/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BjXYWBLdjSmeDic4X%2Fj7o4A%3D%3D))
