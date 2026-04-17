@@ -9,7 +9,7 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 
 ## Demo
 
-![Autonomous Vacuum Cleaner Robot](images/vacuum_cleaner_back.png?raw=true)
+![Autonomous Vacuum Cleaner Robot](images/vacuum_cleaner_front.png?raw=true)
 ![Autonomous Vacuum Cleaner Robot](images/vacuum_cleaner_back.png?raw=true)
 ![Autonomous Vacuum Cleaner Robot](images/Internal_circuit1.jpg?raw=true)
 
