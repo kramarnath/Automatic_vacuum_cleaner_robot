@@ -9,8 +9,8 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 
 ## Demo
 
-<img src="vacuum_cleaner_front.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
-<img src="vacuum_cleaner_back.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+<img src="images/vacuum_cleaner_front.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+<img src="images/vacuum_cleaner_back.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 <img src="images/Internal_circuit1.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 ---
@@ -43,17 +43,17 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 ---
 ## Block diagram
 
-<img src="Block_diagram.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+<img src="images/Block_diagram.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 ## Pin Configuration
 
 ### Arduino Uno R3
 
-<img src="Arduino-UNO.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+<img src="images/Arduino-UNO.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 ### Ultrasonic Sensors (HC-SR04)
 
-<img src="hcsr04-1.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+<img src="images/hcsr04-1.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 | Sensor | Trig Pin | Echo Pin |
 |---|---|---|
@@ -63,7 +63,7 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 
 ### IR Floor Sensor
 
-<img src="IR%20Pinout_bb.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+<img src="images/IR%20Pinout_bb.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 | Signal | Arduino Pin |
 |---|---|
@@ -74,7 +74,7 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 
 ### Motor Driver (L298N)
 
-<img src="L298N-Motor-Driver.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
+<img src="images/L298N-Motor-Driver.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 | Motor | IN1 | IN2 |
 |---|---|---|
