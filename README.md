@@ -10,7 +10,6 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 ## Demo
 
 <img src="images/vacuum_cleaner_front.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
-<img src="images/vacuum_cleaner_back.png" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 <img src="images/Internal_circuit1.jpg" alt="Autonomous Vacuum Cleaner Robot" width="400"/>
 
 ---
@@ -38,6 +37,7 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 | DC Motor (with wheels) | 2 |
 | Robot Chassis | 1 |
 | Battery Pack (9V / 12V) | 1 |
+| Case for the robot | — |
 | Jumper Wires | — |
 
 ---
