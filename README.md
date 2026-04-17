@@ -3,7 +3,7 @@
 An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 ultrasonic sensors**, an **IR cliff sensor**, and an **L298N motor driver**. The robot navigates a room independently — detecting and avoiding obstacles in three directions while preventing itself from falling off edges or stairs.
 
 > [!NOTE]
-> Hardware project | Arduino IDE | C++ | Proteus simulation
+> Hardware project | Arduino IDE | C/C++ | Proteus simulation
 
 ---
 
