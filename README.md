@@ -1,71 +1,195 @@
-# Automatic_vacuum_cleaner
-Final year project : Automatic Vacuum Cleaner using Arduino Uno and sensors.
+# Autonomous Vacuum Cleaner Robot
 
-An autonomous vacuum cleaning robot built using **Arduino UNO**, **ultrasonic sensors**, **IR floor detection**, and an **L298N motor driver**.  
-The robot detects obstacles, avoids edges, and navigates the floor automatically.
+An autonomous floor-cleaning robot built with **Arduino UNO** three **HC-SR04 sensors**, an **IR cliff sensor** and an **L298N motor driver**. The robot navigates a room on its own. It. Avoids obstacles in three directions. It also prevents itself from falling off edges or stairs.
 
----
+> **Hardware project | Arduino IDE | C++ | Proteus simulation**
 
-## 🚀 Features
-- Autonomous forward movement
-- Obstacle detection using 3 ultrasonic sensors (Left, Front, Right)
-- Floor-edge detection using IR sensor (prevents falling from stairs)
-- Smart turning based on sensor logic
-- Memory flag to avoid forward-backward loop
-- Uses L298N motor driver to control two DC motors
+## Demo
 
----
+> *(Add a photo or GIF of the robot running here)*
 
-## 🧰 Components Used
-- Arduino UNO  
-- Ultrasonic Sensors (HC-SR04) × 3  
-- IR Floor/Cliff Detection Sensor × 1  
-- L298N Motor Driver  
-- DC Motors × 2  
-- Chassis + Wheels  
-- Battery Pack  
-- Jumper Wires  
+> *(Link to a demo video. Even a 10-second phone recording makes a difference)*
 
----
+## Features
 
-## ⚙️ Working Principle
-### 1. **Ultrasonic Sensors**
-- Measure distance in front, left, and right.
-- Safe distance is set to **15 cm**.
-- Robot turns left or right when an obstacle is detected.
+* The robot moves forward on its own with no help.
 
-### 2. **IR Floor Sensor**
-- Detects whether the robot is on solid floor.
-- If the floor is missing (edge detected), robot reverses and then turns.
+* It uses **HC-SR04 sensors** to detect obstacles in three directions. Front and right.
 
-### 3. **Motor Control**
-Based on sensor readings:
-- **Forward** when no obstacle and floor is present.
-- **Right Turn** if left obstacle is detected.
-- **Left Turn** when right/front obstacle is detected.
-- **Reverse** when floor is missing.
+* The **IR sensor** helps the robot detect cliffs and floor edges to prevent falls.
 
-A memory variable (`a`) prevents the robot from getting stuck in a loop when reversing near edges.
-## 🔧 Arduino Pin Configuration
+* The robot has turning logic. It turns based on which direction's blocked.
 
-### **Ultrasonic Sensors**
-| Sensor | Trigger Pin | Echo Pin |
-|--------|-------------|----------|
-| Left   | 3           | 5        |
-| Front  | 6           | 9        |
-| Right  | 10          | 11       |
+* After detecting a cliff the robot auto-. Turns away from the edge.
 
-### **IR Floor Sensor**
-`IR Pin → 2`
+* The **Serial Monitor** shows real-time sensor readings for debugging.
 
-### **Motor Driver (L298N)**
-| Function | Arduino Pin |
-|----------|-------------|
-| Motor1 IN1 | 4 |
-| Motor1 IN2 | 7 |
-| Motor2 IN1 | 8 |
-| Motor2 IN2 | 12 |
+* The robots design was tested in **Proteus simulation** before building.
 
----
+## Hardware Components
 
-## 📁 Project Structure
+| Component Quantity |
+
+|---|---|
+
+| Arduino UNO | 1 |
+
+| HC-SR04 Ultrasonic Sensor | 3 |
+
+| IR Cliff / Floor Detection Sensor | 1 |
+
+| L298N Dual H-Bridge Motor Driver | 1 |
+
+DC Motor (with wheels) | 2 |
+
+| Robot Chassis | 1 |
+
+| Battery Pack (9V / 12V) | 1 |
+
+| Jumper Wires |. |
+
+## Pin Configuration
+
+### Ultrasonic Sensors (HC-SR04)
+
+| Sensor | Trig Pin | Echo Pin |
+
+|---|---|---|
+
+| Left | 3 5 |
+
+| Front 6 | 9 |
+
+| Right | 10 11 |
+
+### IR Floor Sensor
+
+| Signal | Arduino Pin |
+
+|---|---|
+
+| IR Output | 2 |
+
+> The **IR sensor** reads `LOW` for floor `HIGH` for edge/cliff detected.
+
+### Motor Driver (L298N)
+
+Motor | IN1 | IN2 |
+
+|---|---|---|
+
+Motor 1 (Left wheel) 4 | 7 |
+
+| Motor 2 (Right wheel) 8 | 12 |
+
+## Navigation Logic
+
+The robot makes decisions every 50 ms:
+
+1. If a cliff is detected it reverses for 700ms. Sets a recovery flag.
+
+2. If the recovery flag is set it turns left for 100ms. Clears the flag.
+
+3. If all directions are clear it moves forward.
+
+4. If the left direction is blocked it turns right.
+
+5. If the right direction is blocked it turns left.
+
+6. If the front direction is blocked it turns left.
+
+The robot has a threshold of 15 cm to detect obstacles.
+
+## Project Structure
+
+```
+
+Automatic_vacuum_cleaner_robot/
+
+├── Vacuum_cleaner/
+
+│   └── Vacuum_cleaner.ino   # Main Arduino sketch
+
+├── images/
+
+│   └──...                  # Circuit photos / robot photos
+
+├──.gitignore
+
+├── LICENSE
+
+└── README.md
+
+```
+
+## How to Build and Flash
+
+1. Connect all components as per the pin configuration.
+
+2. Open `Vacuum_cleaner/Vacuum_cleaner.ino` in **Arduino IDE**.
+
+3. Select **Board:** Arduino. The correct **COM Port**.
+
+4. Upload the sketch.
+
+5. Open **Serial Monitor** at `9600 baud` to see sensor readings.
+
+6. Power the robot. Place it on the floor.
+
+## How It Works
+
+### Ultrasonic Sensors (HC-SR04)
+
+Each **HC-SR04 sensor** sends a pulse. The echo pins duration is converted to distance in centimetres.
+
+### IR Cliff Sensor
+
+The **IR sensor** points down to detect the floor. If the floor disappears the robot reverses.
+
+### Motor Control (L298N)
+
+The **L298N** controls both DC motors. Turning is done by running one motor and one backward.
+
+## Known Limitations
+
+* No speed control. Motors run at speed.
+
+* The 15 cm threshold may need adjustment.
+
+* No mapping of visited areas.
+
+* No detection of low-profile obstacles.
+
+## Potential Improvements
+
+* Add speed control for turns.
+
+* Implement a coverage pattern.
+
+* Add a fan/suction motor relay.
+
+* Log sensor data, over Bluetooth.
+
+* Add a gyroscope for turns.
+
+## Tools Used
+
+| Tool | Purpose |
+
+|---|---|
+
+| Arduino IDE | Firmware development |
+
+| Proteus | Circuit simulation |
+
+| Serial Monitor | Real-time sensor debugging |
+
+## License
+
+MIT License. See [LICENSE](LICENSE) for details.
+
+## Author
+
+**Amarnath K R**
+
+[GitHub](https://github.com/kramarnath) · [LinkedIn](#)
