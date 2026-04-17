@@ -83,9 +83,6 @@ The robot follows a priority-based decision tree every 50 ms:
 6. Front blocked?        → Turn left (default escape)
 ```
 
-> [!TIP]
-> The `reverseFlag` prevents the robot from immediately re-triggering the reverse sequence after a cliff recovery, which would cause it to oscillate at the edge indefinitely.
-
 **Obstacle threshold:** 15 cm (configurable via `OBSTACLE_THRESHOLD_CM` constant in the sketch)
 
 ---
@@ -114,7 +111,7 @@ Automatic_vacuum_cleaner_robot/
 5. Open **Serial Monitor** at `9600 baud` to watch live sensor readings
 6. Power the robot from the battery pack and place it on the floor
 
-> [!WARNING]
+> [IMPORTANT]
 > Ensure the battery polarity is correct before powering the L298N motor driver. Reverse polarity will permanently damage the IC.
 
 ---
@@ -178,5 +175,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## Author
 
 **Amarnath K R**  
-B.Tech ECE | APJ KTU  
 [GitHub](https://github.com/kramarnath) · [LinkedIn](#)
