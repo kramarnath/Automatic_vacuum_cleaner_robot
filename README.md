@@ -37,7 +37,7 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 | DC Motor (with wheels) | 2 |
 | Robot Chassis | 1 |
 | Battery Pack (9V / 12V) | 1 |
-| Case for the robot | — |
+| Body for the robot | — |
 | Jumper Wires | — |
 
 ---
