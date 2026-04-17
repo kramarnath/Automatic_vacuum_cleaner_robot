@@ -1,12 +1,6 @@
 /* ============================================================
    AUTONOMOUS VACUUM CLEANER ROBOT
    ============================================================
-   Hardware:
-     - Arduino UNO
-     - 3x HC-SR04 Ultrasonic Sensors (Left, Front, Right)
-     - 1x IR Cliff/Edge Detection Sensor
-     - L298N Dual H-Bridge Motor Driver
-     - 2x DC Motors
 
    Navigation Logic:
      - Moves forward when all paths are clear and floor is safe
@@ -22,9 +16,6 @@
      Motor 1          → IN1: 4,  IN2: 7
      Motor 2          → IN1: 8,  IN2: 12
 
-   Author : Amarnath K R
-   Date   : 2021
-   License: MIT
    ============================================================ */
 
 // ── Sensor Pins ──────────────────────────────────────────────
