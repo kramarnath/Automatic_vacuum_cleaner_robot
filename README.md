@@ -8,9 +8,12 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 ---
 
 ## Demo
-
-<img src="images/vacuum_cleaner_front.png" alt="Robot front view" width="400"/>
-<img src="images/Internal_circuit1.jpg" alt="Internal circuit" width="400"/>
+<table>
+  <tr>
+    <td align="center"><img src="images/vacuum_cleaner_front.png" alt="HC-SR04 ultrasonic sensor" height="200"/></td>
+    <td align="center"><img src="images/Internal_circuit1.jpg" alt="IR cliff sensor" height="200"/></td>
+  </tr>
+</table>
 
 ---
 
