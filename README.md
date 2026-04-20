@@ -157,21 +157,6 @@ The robot follows a priority-based decision tree every 50 ms:
 
 ---
 
-## Project Structure
-
-```
-Automatic_vacuum_cleaner_robot/
-├── Vacuum_cleaner/
-│   └── Vacuum_cleaner.ino   # Main Arduino sketch
-├── images/
-│   └── ...                  # Circuit photos / robot photos
-├── .gitignore
-├── LICENSE
-└── README.md
-```
-
----
-
 ## How to Build and Flash
 
 1. Wire all navigation components according to the pin configuration tables above
