@@ -10,7 +10,7 @@ An autonomous floor-cleaning robot built with **Arduino UNO**, three **HC-SR04 u
 ## Demo
 
 <img src="images/vacuum_cleaner_front.png" alt="Robot front view" width="400"/>
-<img src="images/Internal_circuit1.jpg" alt="Internal circuit layout" width="400"/>
+<img src="images/Internal_circuit1.jpg" alt="Internal circuit" width="400"/>
 
 ---
 
@@ -74,7 +74,7 @@ The robot runs two independent subsystems from a single **12V battery**:
 
 The suction system is built entirely from repurposed parts:
 
-<img src="images/Block_diagram.png" alt="System block diagram" width="400"/>
+<img src="1648176479818.jpeg" alt="System block diagram" width="400"/>
 
 - A **high-RPM DC motor** spins a fan/impeller inside a sealed **plastic bottle**, creating negative pressure (suction)
 - A **hollow pipe or tube** connects the bottle inlet to a floor-level nozzle at the front of the chassis
