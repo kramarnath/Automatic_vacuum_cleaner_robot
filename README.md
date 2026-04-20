@@ -78,7 +78,7 @@ The robot runs two independent subsystems from a single **12V battery**:
 
 The suction system is built entirely from repurposed parts:
 
-<img src="images/Sucktion.jpeg" alt="DIY Sucktion System" height="300"/>
+<img src="images/Suction.jpeg" alt="DIY Suction System" height="300"/>
 
 - A **high-RPM DC motor** spins a fan/impeller inside a sealed **plastic bottle**, creating negative pressure (suction)
 - A **hollow pipe or tube** connects the bottle inlet to a floor-level nozzle at the front of the chassis
